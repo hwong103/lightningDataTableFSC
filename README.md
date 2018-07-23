@@ -2,6 +2,7 @@
 Lightning datatable for Flow Screens
 
 Resources/Inspiration:
+
 http://sfdcfacts.com/lightning/editable-lightningdatatable-summer18-feature/
 https://github.com/alexed1/LightningFlowComponents/tree/master/flow_screen_components/datatableFSC
 https://terencechiu.com/2018/06/13/creating-lightning-components-for-flow-screens/
