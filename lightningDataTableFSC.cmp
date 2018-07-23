@@ -1,0 +1,83 @@
+<aura:component implements="lightning:availableForFlowScreens" controller="lightningDataTableFSCController" access="global">
+
+    <!-- attributes -->
+    <!--<aura:attribute name="dataArr" type="String[]" />-->
+    <aura:attribute name="tableTitle" type="String" />
+    <aura:attribute name="showTitle" type="boolean" default="false" />
+    <aura:attribute name="dataObjArr" type="Object[]" />
+    <aura:attribute name="reload" type="boolean" default="false" />
+    <!--<aura:attribute name="data" type="Object" />-->
+    <aura:attribute name="selectedRows" type="Object[]" />
+    <aura:attribute name="selectedRowIds" type="String[]" />
+
+    <aura:attribute name="columns" type="List" />
+    <aura:attribute name="maxRowSelection" type="Integer" default="0" />
+    <aura:attribute name="key" type="String" default="Id" />
+    <aura:attribute name="debug" type="String" />
+    <aura:attribute name="hideCheckboxColumn" type="boolean" default="false" />
+    <aura:attribute name="showRowNumberColumn" type="boolean" default="true" />
+
+    <aura:attribute name="object" type="string" />
+    <aura:attribute name="condition" type="string" />
+    <aura:attribute name="limit" type="string" />
+    <aura:attribute name="order" type="string" />
+
+    <aura:attribute name="colLabel01" type="string" />
+    <aura:attribute name="colLabel02" type="string" />
+    <aura:attribute name="colLabel03" type="string" />
+    <aura:attribute name="colLabel04" type="string" />
+    <aura:attribute name="colLabel05" type="string" />
+    <aura:attribute name="colLabel06" type="string" />
+    <aura:attribute name="colLabel07" type="string" />
+    <aura:attribute name="colLabel08" type="string" />
+    <aura:attribute name="colLabel09" type="string" />
+    <aura:attribute name="colLabel10" type="string" />
+
+    <aura:attribute name="colAPI01" type="string" />
+    <aura:attribute name="colAPI02" type="string" />
+    <aura:attribute name="colAPI03" type="string" />
+    <aura:attribute name="colAPI04" type="string" />
+    <aura:attribute name="colAPI05" type="string" />
+    <aura:attribute name="colAPI06" type="string" />
+    <aura:attribute name="colAPI07" type="string" />
+    <aura:attribute name="colAPI08" type="string" />
+    <aura:attribute name="colAPI09" type="string" />
+    <aura:attribute name="colAPI10" type="string" />
+
+    <aura:attribute name="colType01" type="string" default="text" />
+    <aura:attribute name="colType02" type="string" default="text" />
+    <aura:attribute name="colType03" type="string" default="text" />
+    <aura:attribute name="colType04" type="string" default="text" />
+    <aura:attribute name="colType05" type="string" default="text" />
+    <aura:attribute name="colType06" type="string" default="text" />
+    <aura:attribute name="colType07" type="string" default="text" />
+    <aura:attribute name="colType08" type="string" default="text" />
+    <aura:attribute name="colType09" type="string" default="text" />
+    <aura:attribute name="colType10" type="string" default="text" />
+
+    <aura:attribute name="colEditable01" type="boolean" default="false" />
+    <aura:attribute name="colEditable02" type="boolean" default="false" />
+    <aura:attribute name="colEditable03" type="boolean" default="false" />
+    <aura:attribute name="colEditable04" type="boolean" default="false" />
+    <aura:attribute name="colEditable05" type="boolean" default="false" />
+    <aura:attribute name="colEditable06" type="boolean" default="false" />
+    <aura:attribute name="colEditable07" type="boolean" default="false" />
+    <aura:attribute name="colEditable08" type="boolean" default="false" />
+    <aura:attribute name="colEditable09" type="boolean" default="false" />
+    <aura:attribute name="colEditable10" type="boolean" default="false" />
+
+    <!-- handlers-->
+    <aura:handler name="init" value="{!this }" action="{! c.init }" />
+
+    <div >
+        <div class="slds-text-heading_medium">
+            <aura:if isTrue="{!v.showTitle}">
+                <h1>{! v.tableTitle }</h1>
+            </aura:if>
+        </div>
+        <lightning:datatable aura:id="recordDataTable" keyField="{!v.key}" data="{! v.dataObjArr }" columns="{! v.columns }" maxRowSelection="{! v.maxRowSelection }"
+            onrowselection="{! c.getSelectedRow }" showRowNumberColumn="{!v.showRowNumberColumn}" hideCheckboxColumn="{!v.hideCheckboxColumn}"
+            onsave="{!c.onSave}" />
+    </div>
+
+</aura:component>

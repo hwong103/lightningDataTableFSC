@@ -1,0 +1,59 @@
+<design:component>    
+    <design:attribute name="object" label="1. Object" description="Object API Name"/>
+    <design:attribute name="condition" label="2. Where Clause" description="eg. ParentId = '{!varRecordId}' "/>
+    <design:attribute name="limit" label="3. Limit" description="may leave blank"/>
+    <design:attribute name="order" label="4. Order By" description="may leave blank"/>
+    <design:attribute name="maxRowSelection" label="5. Max Row Selection" description="by default is set to 0."/>    
+    <design:attribute name="hideCheckboxColumn" label="6. Hide Checkbox Column" description="by default set to false."/>    
+    <design:attribute name="showRowNumberColumn" label="7. Show Row Number" description="by default set to true."/>   
+    <design:attribute name="tableTitle" label="8. Table Title" description="Set Title if required"/>   
+    <!--<design:attribute name="debug" label="zdebug"/>-->
+
+    <design:attribute name="colLabel01" label="colLabel01" description="Column Label"/>
+    <design:attribute name="colLabel02" label="colLabel02" description="Column Label"/>
+    <design:attribute name="colLabel03" label="colLabel03" description="Column Label"/>
+    <design:attribute name="colLabel04" label="colLabel04" description="Column Label"/>
+    <design:attribute name="colLabel05" label="colLabel05" description="Column Label"/>
+    <design:attribute name="colLabel06" label="colLabel06" description="Column Label"/>
+    <design:attribute name="colLabel07" label="colLabel07" description="Column Label"/>
+    <design:attribute name="colLabel08" label="colLabel08" description="Column Label"/>
+    <design:attribute name="colLabel09" label="colLabel09" description="Column Label"/>
+    <design:attribute name="colLabel10" label="colLabel10" description="Column Label"/>
+
+    <design:attribute name="colAPI01" label="colAPI01" description="API name of field"/>
+    <design:attribute name="colAPI02" label="colAPI02" description="API name of field"/>
+    <design:attribute name="colAPI03" label="colAPI03" description="API name of field"/>
+    <design:attribute name="colAPI04" label="colAPI04" description="API name of field"/>
+    <design:attribute name="colAPI05" label="colAPI05" description="API name of field"/>
+    <design:attribute name="colAPI06" label="colAPI06" description="API name of field"/>
+    <design:attribute name="colAPI07" label="colAPI07" description="API name of field"/>
+    <design:attribute name="colAPI08" label="colAPI08" description="API name of field"/>
+    <design:attribute name="colAPI09" label="colAPI09" description="API name of field"/>
+    <design:attribute name="colAPI10" label="colAPI10" description="API name of field"/>
+
+    <design:attribute name="colType01" label="colType01" description="Default = text"/>
+    <design:attribute name="colType02" label="colType02" description="Default = text"/>
+    <design:attribute name="colType03" label="colType03" description="Default = text"/>
+    <design:attribute name="colType04" label="colType04" description="Default = text"/>
+    <design:attribute name="colType05" label="colType05" description="Default = text"/>
+    <design:attribute name="colType06" label="colType06" description="Default = text"/>
+    <design:attribute name="colType07" label="colType07" description="Default = text"/>
+    <design:attribute name="colType08" label="colType08" description="Default = text"/>
+    <design:attribute name="colType09" label="colType09" description="Default = text"/>
+    <design:attribute name="colType10" label="colType10" description="Default = text"/>
+
+    <design:attribute name="colEditable01" label="colEditable01" description="Default = false"/>
+    <design:attribute name="colEditable02" label="colEditable02" description="Default = false"/>
+    <design:attribute name="colEditable03" label="colEditable03" description="Default = false"/>
+    <design:attribute name="colEditable04" label="colEditable04" description="Default = false"/>
+    <design:attribute name="colEditable05" label="colEditable05" description="Default = false"/>
+    <design:attribute name="colEditable06" label="colEditable06" description="Default = false"/> 
+    <design:attribute name="colEditable07" label="colEditable07" description="Default = false"/>
+    <design:attribute name="colEditable08" label="colEditable08" description="Default = false"/>
+    <design:attribute name="colEditable09" label="colEditable09" description="Default = false"/>
+    <design:attribute name="colEditable10" label="colEditable10" description="Default = false"/>     
+    
+    <design:attribute name="reload" label="Output: reload" description="by default set to false. Use a decision to refresh screen/datatable"/>    
+    <design:attribute name="selectedRowIds" label="Output: selectedRowIds" description="Ids of selected records"/>        
+
+</design:component>
