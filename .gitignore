@@ -1,0 +1,4 @@
+.sfdx/tools/apex.db
+sfdx-project.json
+force.json
+.sfdx/typings/lwc/apex/lightningDataTableFSCController.d.ts

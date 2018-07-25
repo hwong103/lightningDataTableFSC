@@ -29,12 +29,11 @@ public static List<sObject> getRecords(String obj, String fields, String conditi
         soql += ' LIMIT ' + lim;
     }
 
-
     return Database.query(soql);
 }
 @AuraEnabled
 public static boolean updateRecords(List<sObject> editedRecordList)
-{    
+{
     system.debug(LoggingLevel.INFO, 'editedRecordList ==== ' + string.valueof(editedRecordList));
     try {
         Database.update(editedRecordList);
