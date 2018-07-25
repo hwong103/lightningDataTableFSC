@@ -1,12 +1,10 @@
 <aura:component implements="lightning:availableForFlowScreens" controller="lightningDataTableFSCController" access="global">
 
-    <!-- attributes -->
-    <!--<aura:attribute name="dataArr" type="String[]" />-->
+    <!-- attributes -->    
     <aura:attribute name="tableTitle" type="String" />
     <aura:attribute name="showTitle" type="boolean" default="false" />
     <aura:attribute name="dataObjArr" type="Object[]" />
-    <aura:attribute name="reload" type="boolean" default="false" />
-    <!--<aura:attribute name="data" type="Object" />-->
+    <aura:attribute name="reload" type="boolean" default="false" />    
     <aura:attribute name="selectedRows" type="Object[]" />
     <aura:attribute name="selectedRowIds" type="String[]" />
 
